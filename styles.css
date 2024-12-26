@@ -1,0 +1,44 @@
+.after-example{
+    li::after {
+        content: "✅";
+        padding-left: 3px;
+      }
+      margin-bottom: 20px;      
+}
+
+.before-example{
+    li::before {
+        content: "🅧";
+        padding-right: 4px;
+        color: orange;
+      }
+      
+      li {
+        list-style-type: none;
+      }
+      margin-bottom: 20px; 
+}
+
+.first-letter{
+    p::first-letter {
+        font-size: 300%;
+      }
+      margin-bottom: 20px;
+}
+
+.First-Line{
+    p::first-line {
+        font-weight: bold;
+        font-size: 1.6rem;
+        color: orange;
+      }
+      margin-bottom: 20px;
+}
+
+.Place-Holder{
+    input::placeholder {
+        color: orange;
+        font-weight: bold;
+      }
+      margin-bottom: 20px;
+}

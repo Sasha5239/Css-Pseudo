@@ -1,0 +1,60 @@
+<!--Los pseudoelementos nos permiten añadir estilos a una parte concreta del documento, creando elementos “extra” en ciertos lugares junto al elemento seleccionado. A través del caracter “::” indicaremos la parte concreta del documento en relación al elemento seleccionado. Por ejemplo, si seleccionamos div::after, nos estilará la parte posterior de los elementos div del documento.
+En pseudoelementos veremos cómo añadir estilos a una parte específica de documento que reciben este nombre. La sintaxis de estos pseudoelementos se define con los caracteres “::” tras indicar el selector al que queremos implementarle este añadido.-->
+<!-- HTML:  comentario 
+CSS: /* comentario */
+JavaScript: // comentario (línea) o /* comentario */ (bloque)
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Pseudoelementos</title>
+  </head>
+  <body>
+    <div class="after-example">after
+    <h2>Tareas completadas</h2>
+    <ul>
+      <li>Programar</li>
+      <li>Hacer la comida</li>
+      <li>Programar</li>
+      <li>Limpiar la habitación</li>
+      <li>Programar</li>
+      <li>Programar más</li>
+    </ul>
+    </div>
+
+    <div class="before-example">before
+        <h2>X-Men</h2>
+    <ul>
+      <li>Profesor X</li>
+      <li>Lobezno</li>
+      <li>Tormenta</li>
+      <li>Ciclope</li>
+      <li>Jean Grey</li>
+      <li>Bestia</li>
+    </ul>
+    </div>
+
+    <div class="first-letter">first
+    <p>
+        La Historia Interminable
+    </p>
+    </div>
+
+    <div class="First-Line">Primera Linea
+        <p>
+            La mutación es la clave para nuestra evolución, nos ha permitido
+            evolucionar del organismo de una sola célula hasta ser la especie
+            dominante en el planeta.
+          </p>
+    </div>
+
+    <div class="Place-Holder">
+        <input type="text" placeholder="Username" />
+    </div>
+  </body>
+</html>

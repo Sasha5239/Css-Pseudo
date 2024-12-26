@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    background-image: url(https://lumiere-a.akamaihd.net/v1/images/pp_xmen1992_herobanner_21369_2ead90c7.jpeg?region=0,0,2048,878);
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  header h1 {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+  }
+  
+  nav {
+    background-color: #333;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav li {
+    flex: 1;
+    text-align: center;
+  }
+  
+  nav a {
+    display: block;
+    padding: 20px 0;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /*HOVER Y FOCUS AL NAV */
+ 
+
+
+/* Pseudoclases para enlaces de navegación */
+nav a:hover,
+nav a:active {
+  background-color: #555;
+}
+
+nav a:active {
+    color: purple;
+}
+nav a:focus {
+    background-color: purple;
+    outline: 2px solid purple;
+}
+  
+nav a:hover{
+    color: red;
+  }
+
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  section ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  section li {
+    margin: 0 10px;
+    list-style-type: none;
+  }
+  
+  main li{
+    color:red;
+    text-decoration:none;
+    position: relative; /* Necesario para pseudoelementos */
+    padding: 0.5em; /* Ajusta el padding si es necesario */
+  }
+
+  main li::before {
+    content: "🅧" "[";
+    position:initial;
+    left: 5px;
+   
+}
+
+ 
+main li::after {
+    content: "]";
+    position:relative;
+    right: -0.1em;
+}
+
+
+
+main ul li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+  }
+
+  section a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 0.8em;
+  }
